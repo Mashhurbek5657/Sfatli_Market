@@ -1,0 +1,848 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenr {
+  background: #FFFFFF;
+}
+
+.parent {
+  padding: 15px;
+  max-width: 1200px;
+  margin: auto;
+  background: #FFFFFF;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  background: #7E33E0;
+}
+.nav1 .nes {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav1 .nes .nis {
+  width: 20px;
+}
+.nav1 .nes .p22 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav1 .nes p {
+  color: white;
+}
+.nav1 .nes .til {
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+.nav1 .nes .til option {
+  background-color: black;
+}
+.nav1 .nes .logs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav1 .nes .logs .logb {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav ul li {
+  font-family: sans-serif;
+  font-size: 17px;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav ul li:hover {
+  color: red;
+}
+nav .input1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 245px;
+  height: 40px;
+  border: 2px solid #E7E6EF;
+}
+nav .input1 input {
+  padding: 10px;
+  width: 200px;
+  height: 37px;
+  border: 0px;
+  outline: none;
+}
+nav .input1 button {
+  cursor: pointer;
+  width: 42px;
+  height: 37px;
+  background: #FB2E86;
+  border: 0;
+  outline: none;
+}
+
+.csrols {
+  background: #F2F0FF;
+  width: 100%;
+  height: 500px;
+}
+
+.swiper {
+  background: #F2F0FF;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide .img4 {
+  display: flex;
+  align-items: center;
+}
+.swiper-slide .dic {
+  width: 400px;
+}
+.swiper-slide button {
+  width: 150px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #FB2E86;
+  color: white;
+}
+.swiper-slide .imgd {
+  margin-top: -50px;
+}
+.swiper-slide .imgd img {
+  width: 300px;
+}
+.swiper-slide .imgf img {
+  width: 420px;
+}
+
+.cons {
+  font-family: sans-serif;
+}
+.cons h1 {
+  text-align: center;
+  color: #151875;
+}
+
+.kings1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.kings1 .card1 {
+  margin-top: 20px;
+  width: 360px;
+  height: 306px;
+}
+.kings1 .card1 .imgs {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 360px;
+  height: 269px;
+  background: #F7F7F7;
+}
+.kings1 .card1 .imgs .lin {
+  display: none;
+}
+.kings1 .card1 .imgs .kil {
+  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #d6d8ef;
+  border-radius: 50px;
+}
+.kings1 .card1 .imgs .kil .nis2 {
+  width: 30px;
+}
+.kings1 .card1 .imgs img {
+  width: 200px;
+}
+.kings1 .card1 .imgs:hover .lin {
+  display: block;
+}
+.kings1 .card1 .disn {
+  padding: 10px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  color: #151875;
+}
+
+.footer {
+  margin-top: 100px;
+}
+.footer .dons {
+  background: #EEEFFB;
+  width: 100%;
+  height: 300px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.footer .dons h1 {
+  font-family: sans-serif;
+}
+.footer .dons p {
+  color: #8A8FB9;
+}
+.footer .dons .lon {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.footer .dons .lon h1 {
+  font-family: sans-serif;
+}
+.footer .dons .inpuld {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 290px;
+  height: 40px;
+  border: 2px solid #E7E6EF;
+}
+.footer .dons .inpuld input {
+  padding: 10px;
+  width: 200px;
+  height: 37px;
+  border: 0px;
+  outline: none;
+}
+.footer .dons .inpuld button {
+  cursor: pointer;
+  width: 86px;
+  height: 37px;
+  background: #FB2E86;
+  color: white;
+  font-family: sans-serif;
+  border: 0;
+  outline: none;
+}
+.footer .ortgi {
+  background: #E7E4F8;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+  font-family: sans-serif;
+  color: #9DA0AE;
+}
+.footer .ortgi .dis {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .ortgi .dis .icons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #151875;
+}
+
+.toggle-btn {
+  width: 70px;
+  height: 35px;
+  background: #f0f0f0;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+body.dark .contenr {
+  background: #1a1a1a;
+  color: #fff;
+  background: black;
+  color: white;
+}
+body.dark .contenr .input {
+  background: #1E2A47;
+}
+body.dark .contenr .input input {
+  background: #1E2A47;
+  color: white;
+}
+body.dark .contenr .cons {
+  background-color: black;
+}
+body.dark .contenr .cons h1 {
+  color: white;
+}
+body.dark .contenr .parent {
+  background-color: black;
+}
+body.dark .contenr .kings1 {
+  background-color: black;
+}
+body.dark .contenr .kings1 .imgs {
+  background-color: rgba(10, 10, 10, 0.595);
+  border-radius: 20px;
+}
+body.dark .contenr .kings1 h3 {
+  color: white;
+}
+body.dark .contenr .kings1 p {
+  color: white;
+}
+body.dark .contenr .inpuld {
+  background-color: #1a1a1a;
+}
+body.dark .contenr .inpuld input {
+  color: white;
+  background-color: #1a1a1a;
+}
+body.dark .contenr .inpuld button {
+  background-color: #01033b;
+}
+body.dark .contenr .input1 {
+  background-color: #1a1a1a;
+}
+body.dark .contenr .input1 input {
+  color: white;
+  background-color: #1a1a1a;
+}
+body.dark .contenr .input1 button {
+  background-color: #01033b;
+}
+body.dark .contenr .nav1 {
+  background-color: black;
+}
+body.dark .contenr nav {
+  background-color: black;
+}
+body.dark .contenr .footer .dons {
+  background-color: rgb(12, 12, 12);
+}
+body.dark .contenr .footer p {
+  color: white;
+}
+body.dark .contenr .footer .ortgi {
+  background-color: black;
+}
+body.dark .contenr .wrap {
+  background-color: rgba(20, 20, 20, 0.305);
+}
+body.dark .contenr .wrap h1 {
+  color: #7E33E0;
+}
+body.dark .contenr .swiper {
+  background: black;
+}
+body.dark .contenr .insl h2 {
+  color: #0c14ff;
+}
+body.dark .contenr .filter {
+  background-color: #021901;
+  color: white;
+}
+body.dark .contenr .card2 {
+  border-radius: 20px;
+}
+body.dark .contenr .card2 h3 {
+  color: #0c14ff;
+}
+body.dark .contenr .card2 h2 {
+  color: #0c14ff;
+}
+body.dark .contenr .card2 .imgf {
+  background-color: #0c0c0c;
+}
+
+body.dark .toggle-btn {
+  background: #333;
+}
+
+body.dark .circle {
+  left: 36px;
+  background: #000;
+  color: yellow;
+}
+
+.toggle-btn2 {
+  width: 70px;
+  height: 35px;
+  background: #f0f0f0;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.circle2 {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+body.dark .contenr {
+  background: #1a1a1a;
+  color: #fff;
+  background: black;
+  color: white;
+}
+body.dark .contenr .input {
+  background: #1E2A47;
+}
+body.dark .contenr .input input {
+  background: #1E2A47;
+  color: white;
+}
+body.dark .contenr .cons {
+  background-color: black;
+}
+body.dark .contenr .cons h1 {
+  color: white;
+}
+body.dark .contenr .parent {
+  background-color: black;
+}
+body.dark .contenr .kings1 {
+  background-color: black;
+}
+body.dark .contenr .kings1 .imgs {
+  background-color: rgba(10, 10, 10, 0.595);
+  border-radius: 20px;
+}
+body.dark .contenr .kings1 h3 {
+  color: white;
+}
+body.dark .contenr .kings1 p {
+  color: white;
+}
+body.dark .contenr .inpuld {
+  background-color: #1a1a1a;
+}
+body.dark .contenr .inpuld input {
+  color: white;
+  background-color: #1a1a1a;
+}
+body.dark .contenr .inpuld button {
+  background-color: #01033b;
+}
+body.dark .contenr .input1 {
+  background-color: #1a1a1a;
+}
+body.dark .contenr .input1 input {
+  color: white;
+  background-color: #1a1a1a;
+}
+body.dark .contenr .input1 button {
+  background-color: #01033b;
+}
+body.dark .contenr .nav1 {
+  background-color: black;
+}
+body.dark .contenr nav {
+  background-color: black;
+}
+body.dark .contenr .footer .dons {
+  background-color: rgb(12, 12, 12);
+}
+body.dark .contenr .footer p {
+  color: white;
+}
+body.dark .contenr .footer .ortgi {
+  background-color: black;
+}
+body.dark .contenr .wrap {
+  background-color: rgba(20, 20, 20, 0.305);
+}
+body.dark .contenr .wrap h1 {
+  color: #7E33E0;
+}
+body.dark .contenr .swiper {
+  background: black;
+}
+body.dark .contenr .insl h2 {
+  color: #0c14ff;
+}
+body.dark .contenr .filter {
+  background-color: #021901;
+  color: white;
+}
+body.dark .contenr .card2 {
+  border-radius: 20px;
+}
+body.dark .contenr .card2 h3 {
+  color: #0c14ff;
+}
+body.dark .contenr .card2 h2 {
+  color: #0c14ff;
+}
+body.dark .contenr .card2 .imgf {
+  background-color: #0c0c0c;
+}
+
+body.dark .toggle-btn2 {
+  background: #333;
+}
+
+body.dark .circle2 {
+  left: 36px;
+  background: #000;
+  color: yellow;
+}
+
+.navs3 {
+  width: 100%;
+  height: 300px;
+}
+.navs3 .wrap {
+  background: #F2F0FF;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+.navs3 .wrap .codel {
+  padding: 80px 0px;
+  max-width: 1200px;
+  margin: auto;
+}
+.navs3 .wrap .codel h1 {
+  color: #101750;
+  font-family: sans-serif;
+}
+.navs3 .wrap .codel p {
+  font-family: sans-serif;
+}
+
+.insl {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  color: #151875;
+}
+.insl .filter {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 10px;
+  width: 180px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: 0;
+}
+
+.wrappr1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  margin-top: 50px;
+  padding: 10px;
+}
+.wrappr1 .card2 {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+}
+.wrappr1 .card2 .ons {
+  width: 170px;
+}
+.wrappr1 .card2 .imgf {
+  padding: 10px;
+  width: 300px;
+  height: 270px;
+  background: #eeeeef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrappr1 .card2 .olds {
+  margin-top: 20px;
+  display: none;
+  transition: 0.5s;
+}
+.wrappr1 .card2 .olds .kil2 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.wrappr1 .card2 .olds .kil2 .nis {
+  width: 25px;
+}
+.wrappr1 .card2:hover .olds {
+  display: block;
+}
+.wrappr1 .card2 h2 {
+  margin: 5px;
+  font-family: sans-serif;
+  color: #151875;
+}
+.wrappr1 .card2 h3 {
+  margin: 5px;
+  font-family: sans-serif;
+  color: #151875;
+}
+.wrappr1 .card2 .blar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.wrappr1 .card2 .blar .red {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+
+#DESTINATION {
+  display: none;
+}
+
+#Karzinka {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.cond {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #151875;
+}
+.cond .dis55 #modal-description {
+  font-size: 20px;
+}
+.cond .dis55 button {
+  width: 180px;
+  height: 40px;
+  background-color: #7E33E0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 1070px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.kars {
+  margin-top: 50px;
+}
+.kars .inol {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  color: #101750;
+}
+.kars .inol h4 {
+  cursor: pointer;
+}
+.kars .max {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.kars .max .on {
+  padding: 20px;
+  width: 800px;
+  height: 450px;
+  background-color: #e8e8e8;
+}
+.kars .max .on .cardns {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 700px;
+  height: 90px;
+  background-color: #FFFFFF;
+  gap: 30px;
+  font-family: sans-serif;
+}
+.kars .max .on .cardns h4 {
+  color: red;
+  cursor: pointer;
+}
+.kars .max .on .cardns h2 {
+  color: #151875;
+}
+.kars .max .on .cardns img {
+  width: 50px;
+}
+.kars .max .of {
+  font-family: sans-serif;
+  color: #101750;
+  padding: 20px;
+  width: 300px;
+  height: 330px;
+  background: #F4F4FC;
+  border: 2px solid #E8E6F1;
+}
+.kars .max .of .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.kars .max .of button#closeBtn {
+  margin-top: 20px;
+}
+.kars .max .of p {
+  font-size: 13px;
+}
+.kars .max .of .modal2 {
+  display: flex;
+  flex-direction: column;
+}
+.kars .max .of .modal2 img {
+  width: 400px;
+}
+.kars .max .of .modal2 #closeBtn {
+  transform: translateX(90px);
+}
+.kars .max .of button {
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  background: #19D16F;
+}
+.kars .max .of .proma {
+  margin-top: 50px;
+}
+.kars .max .of .proma input {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  width: 250px;
+  height: 40px;
+}
+.kars .max .of .button1 {
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  background: #FB2E86;
+}/*# sourceMappingURL=style.css.map */

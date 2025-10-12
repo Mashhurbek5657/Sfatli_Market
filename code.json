@@ -1,0 +1,39 @@
+[
+    {
+      "img": "./img/image3.png",
+      "title": "dumaloq Stul",
+      "category": "Stul",
+      "price": 9.99
+    },
+    {
+      "img": "./img/image1173.png",
+      "title": "yassi Stul",
+      "category": "Stul",
+      "price": 12.5
+    },
+    {
+      "img": "./img/image23.png",
+      "title": "Kishik Stul",
+      "category": "Stul",
+      "price": 7.75
+    },
+    {
+      "img": "./img/image1166.png",
+      "title": "Katta Stul",
+      "category": "Stul",
+      "price": 11.0
+    },
+    {
+      "img": "./img/image32(1).png",
+      "title": "qora Stul",
+      "category": "Stul",
+      "price": 8.5
+    },
+    {
+      "img": "./img/image1168.png",
+      "title": "Eski Stul",
+      "category": "Stul",
+      "price": 6.99
+    }
+  ]
+  
