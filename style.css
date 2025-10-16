@@ -751,7 +751,7 @@ body.dark .circle3 {
   cursor: pointer;
 }
 
-.modal.hidden {
+#hidden {
   display: none;
 }
 

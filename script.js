@@ -103,6 +103,7 @@ toggle2.addEventListener('click', () => {
 
 
 ///////////////////////////////////////////////Home//////////////////////////
+let currentCurrency2 = "GBP";
 
 let api = './code.json';
 let allData = [];
@@ -148,7 +149,7 @@ function displayData2(data) {
 </div>
 <div class="disn">
     <h3>${item.title}</h3>
-    <p>$${item.price}</p>
+    <p class="price-value">${formatPrice(item.price)}</p>
 </div>
 </div>
         `;
@@ -158,6 +159,25 @@ function displayData2(data) {
 
     })
 }
+
+function formatPrice(price) {
+    if (currentCurrency2 === "GBP") return `$${price}`;
+    if (currentCurrency2 === "USD") return `${price} so'm`;
+    return price;
+}
+
+document.querySelector("#currencySelect").addEventListener("change", (e) => {
+    currentCurrency2 = e.target.value;
+    updateCurrency();
+    updateCart();
+});
+
+function updateCurrency() {
+    document.querySelectorAll('.price-value').forEach((el, i) => {
+        el.textContent = formatPrice(allData2[i].price);
+    });
+}
+
 
 
 let inp = document.querySelector('#inp');
@@ -176,6 +196,7 @@ fetchData2();
 
 
 ///////////////////////////////////////////////Shop Grid Default//////////////////////////
+let currentCurrency = "GBP";
 
 let apis = './base.json';
 let allData2 = [];
@@ -237,7 +258,7 @@ function displayData(data) {
                         <div class="red" style="background: #EC42A2;"></div>
                         <div class="red" style="background: #8568FF;"></div>
                     </div>
-                    <h3>$${item.price}</h3>
+                    <h3 class="price-value">${formatPrice(item.price)}</h3>
                 </div>
         `;
 
@@ -292,7 +313,7 @@ function updateCart() {
                 <div class="dis55">
                     <h2>${item.title}</h2>
                     <p>${item.description}</p>
-                    <p>$${item.price}</p>
+                    <h3 class="price-value">${formatPrice(item.price)}</h3>
                 </div>
             <h4 class="delete-btn">dalete...</h4>
     </div>
@@ -314,11 +335,31 @@ function updateCart() {
 }
 
 
+function formatPrice(price) {
+    if (currentCurrency === "GBP") return `$${price}`;
+    if (currentCurrency === "USD") return `${price} so'm`;
+    return price;
+}
+
+document.querySelector("#currencySelect").addEventListener("change", (e) => {
+    currentCurrency = e.target.value;
+    updateCurrency();
+    updateCart();
+});
+
+function updateCurrency() {
+    document.querySelectorAll('.price-value').forEach((el, i) => {
+        el.textContent = formatPrice(allData2[i].price);
+    });
+}
+
+
 
 function handleSelect(event) {
     let value = event.target.value;
     filterData(value);
 }
+
 function filterData(category) {
     if (category === "all") {
         displayData(allData2);
