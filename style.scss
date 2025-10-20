@@ -189,6 +189,12 @@ nav {
     }
 }
 
+
+.con{
+    display: flex;
+    justify-content: center;
+}
+
 .kings1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -328,10 +334,9 @@ nav {
             h1 {
                 font-family: sans-serif;
             }
-
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
             justify-content: center;
+            align-items: center;
             gap: 100px;
         }
 
@@ -867,6 +872,58 @@ body.dark .circle3 {
     display: none;
 }
 
+.mod {
+    margin-top: 20px;
+    display: flex;
+    width: 1170px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px 10px #F6F4FD;
+}
+
+.product-section {
+    display: flex;
+    gap: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.product-section img {
+    display: flex;
+    width: 300px;
+    border-radius: 10px;
+}
+.product{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    h2{
+        color: #0D134E;
+    }
+    h3{
+        color: #151875;
+    }
+}
+.corzin{
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    background-color: #7E33E0;
+    color: white;
+}
+
+#backBtn {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border: none;
+    background: #013389;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 .modal {
     position: fixed;
@@ -914,6 +971,10 @@ body.dark .circle3 {
 
 #hidden {
     display: none;
+}
+
+.modal {
+    z-index: 3;
 }
 
 .modal-content {
@@ -1118,7 +1179,7 @@ body.dark .circle3 {
 
         .lon {
             margin-top: 70px;
-            display: grid;
+            display: grid !important;
             grid-template-columns: repeat(3, 1fr) !important;
         }
     }
